@@ -40,9 +40,12 @@ namespace Lab1
             //createMatrix.create();
 
             //Lab3_4
-            Lab3_5 transposeMatrix = new Lab3_5();
-            transposeMatrix.Transpose();
+            //Lab3_5 transposeMatrix = new Lab3_5();
+            //transposeMatrix.Transpose();
 
+            //Lab3_6
+            Lab3_6 jagged = new Lab3_6();
+            jagged.JaggedArray();
         }
     }
 }
