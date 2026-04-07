@@ -44,8 +44,12 @@ namespace Lab1
             //transposeMatrix.Transpose();
 
             //Lab3_6
-            Lab3_6 jagged = new Lab3_6();
-            jagged.JaggedArray();
+            //Lab3_6 jagged = new Lab3_6();
+            //jagged.JaggedArray();
+
+            //Lab3_7
+            Lab3_7 jagSum = new Lab3_7();
+            jagSum.JaggedMaxima();
         }
     }
 }
