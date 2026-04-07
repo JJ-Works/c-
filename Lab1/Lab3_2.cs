@@ -1,0 +1,15 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace Lab1
+{
+    internal class Lab3_2
+    {
+        public void reverseThis(int[] arr)
+        {
+            Array.Reverse(arr);
+            Console.WriteLine(string.Join(",",arr));
+        }
+    }
+}

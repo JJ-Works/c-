@@ -1,0 +1,58 @@
+Lab 3
+
+Write a C# program that takes N numbers as input, stores them in an array, and finds the maximum value.
+Write a C# program that reverses a given array of integers.
+Write a C# program that takes a 3x3 matrix as input and prints the sum of each row.
+Write a C# program that takes a 3x3 matrix as input and prints the sum of each column.
+Write a C# program that transposes a given 3x3 matrix.
+Write a C# program that initializes a jagged array with different row lengths and prints its elements.
+Write a C# program that finds and prints the maximum value in each row of a jagged array.
+Write a C# program that takes a string as input and prints its reverse.
+Write a C# program that counts and prints the number of vowels in a given string.
+Write a C# program that checks if a given string is a palindrome.
+Write a C# program that searches for a specific name in an array of names and prints if it exists.
+Write a C# program that sorts an array of integers in ascending order.
+Write a C# program that takes two numbers and an operator (+, -, *, /) as input and performs the corresponding operation.
+Write a C# program that counts and prints the number of words in a given sentence.
+Write a C# program that calculates and prints the factorial of a given number
+
+lab 4
+
+Write a C# program that uses ref to swap two numbers. Take two integers as input, pass them to a method using ref, and display the swapped values.
+
+Write a C# method that uses out parameters to return the sum and product of two numbers. Call the method and print both results.
+
+lab 5
+
+Write a C# program that overloads the + operator to add two objects of a ComplexNumber class (having real and imaginary parts).
+Write a C# program that overloads the == and != operators to compare two Point objects based on their X and Y coordinates.
+Write a C# program that overloads the * operator to multiply a Matrix object by a scalar value.
+Write a C# program that swaps two numbers using a function Swap(ref int a, ref int b).
+Write a C# program that calculates the area and perimeter of a rectangle using an out parameter in a function CalculateRectangle(int length, int width, out int area, out int perimeter).
+Write a C# program that finds both the minimum and maximum values in an array using an out parameter.
+Write a C# program that uses an in parameter in a function PrintValue(in int num) that only reads the value but does not modify it.
+Write a C# program that overloads the / operator to divide two Fraction objects and return a simplified fraction.
+Write a C# program that overloads the [] operator in a custom Collection class to access elements like an array.
+Write a C# program that demonstrates the difference between ref, out, and in parameters in a single function.
+
+lab 6
+
+1. Create a class Calculator that demonstrates method overloading by defining multiple methods with the same name to perform addition using different numbers and types of parameters, and write a program to call each method and observe the output.
+
+
+2. Design a class Student that uses constructor overloading by providing a default constructor, a constructor that initializes only the name, and another that initializes both name and age, then create objects using each constructor and display their values.
+
+
+3. Develop a static class MathUtility with methods to calculate square and cube, call these methods in the Main method without creating an object, and explain what error occurs if a non-static method is added to this static class.
+
+lab 7
+
+ Some usages of this keyword in C#.:
+ It can be used to refer current class instance variable. It is used if field names
+(instance variables) and parameter names are same, that is why both can be
+distinguish easily.
+ this() can be used to invoke the constructor in same class
+ It can be used to pass current object as a parameter to another method.
+
+ It can be used to return current instance from method
+ It can be used to declare indexers.
