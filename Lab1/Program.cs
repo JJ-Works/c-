@@ -40,8 +40,8 @@ namespace Lab1
             //createMatrix.create();
 
             //Lab3_4
-            Lab3_4 createMatrix = new Lab3_4();
-            createMatrix.addColumn();
+            Lab3_5 transposeMatrix = new Lab3_5();
+            transposeMatrix.Transpose();
 
         }
     }
