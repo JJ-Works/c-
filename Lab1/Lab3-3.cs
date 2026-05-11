@@ -6,7 +6,7 @@ namespace Lab1
 {
     internal class Lab3_3
     {
-        public void create()
+        public void SumRows()
         {
             Console.WriteLine("Write a C# program that takes a 3x3 matrix as input and prints the sum of each row.\n");
 

@@ -9,7 +9,7 @@ namespace Lab1
     {
         public void MaximunNum(int[] arr)
         {
-            Console.WriteLine("This is the maximun value: " + arr.Max());
+            Console.WriteLine("Max: " + arr.Max());
         }
     }
 }
