@@ -547,27 +547,231 @@
 //    }
 //}
 
+//using System;
+
+//class Program
+//{
+//    static void Main()
+//    {
+//        CheckoutSystem cs = new CheckoutSystem();
+
+//        Checkout c = cs.Total;
+//        c += cs.Discount;
+
+//        c(7000);
+
+//        Func<double, double, double> total =
+//            (p, q) => p * q;
+
+//        Console.WriteLine("Computed: " + total(1000, 2));
+
+//        Predicate<double> eligible =
+//            x => x >= 5000;
+
+//        Console.WriteLine("Eligible: " + eligible(7000));
+//    }
+//}
+
+//using System;
+//using System.Collections.Generic;
+
+//class Program
+//{
+//    static void Main()
+//    {
+//        StudentManagement sm = new StudentManagement();
+
+//        StudentDelegate s = sm.Add;
+//        s += sm.Report;
+
+//        s("Ram");
+
+//        Func<int, string> grade =
+//            x => x >= 40 ? "Pass" : "Fail";
+
+//        Console.WriteLine("Result: " + grade(80));
+
+//        Action<string> display =
+//            x => Console.WriteLine("Student: " + x);
+
+//        display("Hari");
+
+//        List<int> marks = new List<int>()
+//        {
+//            80, 30, 60
+//        };
+
+//        Predicate<int> pass =
+//            x => x >= 40;
+
+//        List<int> result = marks.FindAll(pass);
+
+//        foreach (int m in result)
+//        {
+//            Console.WriteLine(m);
+//        }
+//    }
+//}
+
+// A program takes two numbers from the user and performs division.
+// Sometimes the user enters zero as the second number.
+// Handle this situation using exception handling.
+
+//using System;
+
+//class Program
+//{
+//    static void Main()
+//    {
+//        try
+//        {
+//            Console.Write("Enter first number: ");
+//            int a = Convert.ToInt32(Console.ReadLine());
+
+//            Console.Write("Enter second number: ");
+//            int b = Convert.ToInt32(Console.ReadLine());
+
+//            int result = a / b;
+
+//            Console.WriteLine("Result = " + result);
+//        }
+
+//        catch (DivideByZeroException)
+//        {
+//            Console.WriteLine("Cannot divide by zero.");
+//        }
+//    }
+//}
+
+// A student enters their age in a form, but sometimes types text
+// instead of a number. Handle this invalid input using exceptions.
+
+//using System;
+
+//class Program
+//{
+//    static void Main()
+//    {
+//        try
+//        {
+//            Console.Write("Enter age: ");
+
+//            int age = Convert.ToInt32(Console.ReadLine());
+
+//            Console.WriteLine("Age = " + age);
+//        }
+
+//        catch (FormatException)
+//        {
+//            Console.WriteLine("Invalid Input. Enter numbers only.");
+//        }
+//    }
+//}
+
+// A program accesses elements from an array of 5 items,
+// but a user tries to access index 10.
+// Prevent the program from crashing using exception handling.
+
+//using System;
+
+//class Program
+//{
+//    static void Main()
+//    {
+//        int[] arr = { 10, 20, 30, 40, 50 };
+
+//        try
+//        {
+//            while(true){
+//            Console.Write("Enter index: ");
+
+//            int index = Convert.ToInt32(Console.ReadLine());
+
+//                Console.WriteLine(arr[index]);
+//            }
+//        }
+
+//        catch (IndexOutOfRangeException)
+//        {
+//            Console.WriteLine("Index does not exist.");
+//        }
+//    }
+//}
+
+// A system tries to open a file using a file path entered by the user,
+// but the file may not exist.
+// Handle this situation using exception handling.
+
+//using System;
+//using System.IO;
+
+//class Program
+//{
+//    static void Main()
+//    {
+//        try
+//        {
+//            Console.Write("Enter file path: ");
+
+//            string path = Console.ReadLine();
+
+//            string text = File.ReadAllText(path);
+
+//            Console.WriteLine(text);
+//        }
+
+//        catch (FileNotFoundException)
+//        {
+//            Console.WriteLine("File not found.");
+//        }
+//    }
+//}
+
+// A login system checks username and password,
+// but sometimes values are null.
+// Use exception handling to manage this case.
+
+//using System;
+
+//class Program
+//{
+//    static void Main()
+//    {
+//        try
+//        {
+//            string username = null;
+
+//            if (username == null)
+//            {
+//                throw new NullReferenceException();
+//            }
+
+//            Console.WriteLine("Username: " + username);
+//        }
+
+//        catch (NullReferenceException)
+//        {
+//            Console.WriteLine("Username cannot be null.");
+//        }
+//    }
+//}
+
 using System;
 
 class Program
 {
     static void Main()
     {
-        CheckoutSystem cs = new CheckoutSystem();
+        try
+        {
+            string username = null;
 
-        Checkout c = cs.Total;
-        c += cs.Discount;
+            Console.WriteLine(username.Length);
+        }
 
-        c(7000);
-
-        Func<double, double, double> total =
-            (p, q) => p * q;
-
-        Console.WriteLine("Computed: " + total(1000, 2));
-
-        Predicate<double> eligible =
-            x => x >= 5000;
-
-        Console.WriteLine("Eligible: " + eligible(7000));
+        catch (NullReferenceException)
+        {
+            Console.WriteLine("Username cannot be null.");
+        }
     }
 }
